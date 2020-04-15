@@ -1,0 +1,21 @@
+<p>get-atrainee works!</p>
+<form (ngsubmit)="getATrainee()">
+    <label>Enter id</label>
+    <input type="number" id="id" name="id" [(ngModel)]="id" />
+    <input type="submit" value="get trainee detail" />
+</form>
+<br /><br />
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>location</td>
+        <td>domain</td>
+    </tr>
+    <tr>
+        <td>{{trainee.id}}</td>
+        <td>{{trainee.name}}</td>
+        <td>{{trainee.location}}</td>
+        <td>{{trainee.domain}}</td>
+    </tr>
+</table>

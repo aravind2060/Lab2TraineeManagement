@@ -1,0 +1,19 @@
+<p>update-atrainee works!</p>
+<form (ngsubmit)="getTraineeforupdate()">
+    <label>Enter id</label>
+    <input type="number" id="id" name="id" [(ngModel)]="id" />
+    <input type="submit" value="get trainee detail" />
+</form>
+<br /><br />
+<h3>Enter Trainee Details</h3>
+<form (ngsubmit)="updateATrainee()">
+    <label>Enter Trainee Id</label>
+    <input type="number" id="id" name="id" [(ngModel)]="trainee.id" /><br />
+    <label>Enter Trainee Name</label>
+    <input type="text" id="name" name="name" [(ngModel)]="trainee.name" /><br />
+    <label>Enter Location</label>
+    <input type="text" id="location" name="location" [(ngModel)]="trainee.location" /><br />
+    <label>Enter Domain</label>
+    <input type="text" id="domain" name="domain" [(ngModel)]="trainee.domain" /><br />
+    <input type="submit" value="update a  Trainee">
+</form>

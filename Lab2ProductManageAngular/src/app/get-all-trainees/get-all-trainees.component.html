@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <th> Id</th>
+        <th>Name</th>
+        <th>location</th>
+        <th>domain</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let trainee of trainees">
+            <td>{{trainee.id}}</td>
+            <td>{{trainee.name}}</td>
+            <td>{{trainee.location}}</td>
+            <td>{{trainee.domain}}</td>
+        </tr>
+    </tbody>
+</table>
